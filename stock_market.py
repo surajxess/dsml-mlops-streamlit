@@ -19,7 +19,7 @@ history = ticker_data.history(start= starting_date, end= ending_date)
 
 
 
-st.write("I am going to show you Microsoft Data")
+st.write("I am going to show you Stock Market Data")
 st.write(history)
 
 col1, col2 = st.columns(2)
