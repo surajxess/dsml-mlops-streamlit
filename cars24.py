@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import pickle
+import datetime
 
 
 
@@ -24,4 +25,8 @@ with col4:
 df = pd.read_csv("C:\\Users\suraj\OneDrive\Desktop\Scaler\MlOps\Dataset\Cars24.csv")
 st.dataframe(df)
 
-st.bar_chart(data=df, x="Price", y="Kms Driven)
+st.bar_chart(data=df, x="Price", y="Driven (Kms)")
+
+d = st.date_input("Enter the date", datetime.date(2023,1,2))
+st.write ("Date is:" ,d)
+
