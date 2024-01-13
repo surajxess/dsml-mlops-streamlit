@@ -46,6 +46,3 @@ def model_pred(Fuel, Gear, engine_power, seats):
     fuel_type = decode_dict["fuel_type"][Fuel]
 
     #This is a new line
-=======
-st.bar_chart(data=df, x="Price", y="Kms Driven)
->>>>>>> parent of 2e83e13 (Update cars24.py)
