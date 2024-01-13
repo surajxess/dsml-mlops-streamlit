@@ -44,3 +44,5 @@ encode_dict = {
 def model_pred(Fuel, Gear, engine_power, seats):
     transmission_type = encode_dict["transmission"][Gear]
     fuel_type = decode_dict["fuel_type"][Fuel]
+
+    #This is a new line
