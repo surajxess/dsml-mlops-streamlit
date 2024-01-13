@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import pickle
-import datetime
 
 
 
@@ -25,6 +24,7 @@ with col4:
 df = pd.read_csv("C:\\Users\suraj\OneDrive\Desktop\Scaler\MlOps\Dataset\Cars24.csv")
 st.dataframe(df)
 
+<<<<<<< HEAD
 st.bar_chart(data=df, x="Price", y="Driven (Kms)")
 
 d = st.date_input("Enter the date", datetime.date(2023,1,2))
@@ -46,3 +46,6 @@ def model_pred(Fuel, Gear, engine_power, seats):
     fuel_type = decode_dict["fuel_type"][Fuel]
 
     #This is a new line
+=======
+st.bar_chart(data=df, x="Price", y="Kms Driven)
+>>>>>>> parent of 2e83e13 (Update cars24.py)
