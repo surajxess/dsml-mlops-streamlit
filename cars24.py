@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import pickle
+import datetime
 
 
 
@@ -24,20 +25,20 @@ with col4:
 df = pd.read_csv("C:\\Users\suraj\OneDrive\Desktop\Scaler\MlOps\Dataset\Cars24.csv")
 st.dataframe(df)
 
-<<<<<<< HEAD
+
 st.bar_chart(data=df, x="Price", y="Driven (Kms)")
 
 d = st.date_input("Enter the date", datetime.date(2023,1,2))
 st.write ("Date is:" ,d)
 
-model = pickle.load(open("car_pred","rb"))
+# model = pickle.load(open("car_pred","rb"))
 
 # with open("car_pred","rb") as f:
     # model = pickle.load(f)
 
 encode_dict = {
     {"fuel_type":{"Petrol":0, "Diesel":1, "CNG":2, "electric":3},
-     transmission":{"automatic": 0, "manual": 1}
+    #  transmission":{"automatic": 0, "manual": 1}
      }
 }
 
