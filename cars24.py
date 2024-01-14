@@ -36,14 +36,14 @@ st.write ("Date is:" ,d)
 # with open("car_pred","rb") as f:
     # model = pickle.load(f)
 
-encode_dict = {
+encode_dict = {{
     {"fuel_type":{"Petrol":0, "Diesel":1, "CNG":2, "electric":3},
-    #  transmission":{"automatic": 0, "manual": 1}
-     }
-}
+     "transmission":{"automatic": 0, "manual": 1}}
+}}
 
 def model_pred(Fuel, Gear, engine_power, seats):
     transmission_type = encode_dict["transmission"][Gear]
     fuel_type = decode_dict["fuel_type"][Fuel]
 
-    #This is a new line
+
+data = [[]]
